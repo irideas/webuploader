@@ -2,7 +2,7 @@ WebUploader 文件上传 [![Build Status](https://secure.travis-ci.org/fex-team/
 ========
 ToFix:
 -  removeFile(file , true); 时未清除相关_queue的内容
--  一些事件如:reset 在做完之前就trigger , 倒置on的事件处理中无法同步获得最新数据 如:getFiles();
+-  一些事件如:reset 在做完之前就trigger , 导致on的事件处理中无法同步获得最新数据 如:getFiles();
  
 > 思考：Mediator是同步模型 ， 用在Angular等框架中需要慎重对待时序
 
