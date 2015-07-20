@@ -5,7 +5,7 @@ ToFix:
 -  一些事件如:reset 在做完之前就trigger , 导致on的事件处理中无法同步获得最新数据 如:getFiles();
  
 > 思考：Mediator是同步模型 ， 用在Angular等框架中需要慎重对待时序
-
+- Base.formatSize 第三个参数使用不合理，及 unit = units.shift() 导致其为undefined的BUG
 ========
 
 WebUploader是一个简单的以HTML5为主，FLASH为辅的现代文件上传组件。在现代的浏览器里面能充分发挥HTML5的优势，同时又不摒弃主流IE浏览器，延用原来的FLASH运行时，兼容IE6+，Andorid 4+，IOS 6+。两套运行时，同样的调用方式，可供用户任意选用。
